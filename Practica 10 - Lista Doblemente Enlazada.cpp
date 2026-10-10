@@ -13,12 +13,11 @@ struct Nodo {
 // Muestra tambien la direccion de memoria de cada nodo y sus enlaces
 void ImprimirLista(Nodo* cabeza) {
     Nodo* actual = cabeza;
-
     while (actual != nullptr) {
         cout << "Dato: " << actual->dato
-            << " | Direccion: " << actual
-            << " | Anterior: " << actual->anterior
-            << " | Siguiente: " << actual->siguiente << endl;
+             << " | Direccion: " << actual
+             << " | Anterior: " << actual->anterior
+             << " | Siguiente: " << actual->siguiente << endl;
         actual = actual->siguiente;
     }
     cout << endl;
@@ -30,9 +29,9 @@ void ImprimirListaReversa(Nodo* cola) {
 
     while (actual != nullptr) {
         cout << "Dato: " << actual->dato
-            << " | Direccion: " << actual
-            << " | Anterior: " << actual->anterior
-            << " | Siguiente: " << actual->siguiente << endl;
+             << " | Direccion: " << actual
+             << " | Anterior: " << actual->anterior
+             << " | Siguiente: " << actual->siguiente << endl;
         actual = actual->anterior;
     }
     cout << endl;
@@ -45,8 +44,8 @@ void BorrarLista(Nodo*& cabeza, Nodo*& cola) {
         contador++;
         // Se imprime antes de delete: despues el nodo ya no existe
         cout << "Elemento borrado " << contador
-            << " Dato: " << cabeza->dato
-            << " | Direccion: " << cabeza << endl;
+             << " Dato: " << cabeza->dato
+             << " | Direccion: " << cabeza << endl;
         delete cabeza;
         cabeza = siguiente;
     }
