@@ -1,5 +1,3 @@
-// 2NLIDTS-YairGonzalez-10_262c.cpp: Lista doblemente enlazada
-//
 #include <iostream>
 
 using namespace std;
